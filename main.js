@@ -78,4 +78,20 @@ const Tmdb = {
     }
 }
 
+const main = async () => {
+    const key = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNDIxYWJkNWNiMDBkYjYxYjMwZDM0ZjRlY2Y0OWVjMSIsInN1YiI6IjYwNWFlMWQwMjJkZjJlMDA2YWFiM2FiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.XQIZDDTht8NrAF_5eZ9Da6a4FkbDk_st3lOW4G4jZGw'
+    const TMDB = Tmdb.init(key)
+    const Data = await TMDB.television('3199').season(2).episodes(1).detail().end().run()
+    //const data = await TMDB.movie('550').detail().output()
+    //const Data = await TMDB.search().page(2).keyword('cloud').end().run()
+    //const data = await TMDB.company('5aa080d6c3a3683fea00011e').detail().output()
+    //const data = await TMDB.network(213).detail().output()
+    //const Data = await TMDB.movie('550').images().end().run()
+    //console.dir(Data)
+    const data = Data.filter().image().output()
+    //console.dir(data)
+    console.dir(data)
+}
+main()
+
 module.exports = Tmdb

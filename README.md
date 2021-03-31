@@ -4,10 +4,10 @@
 
 This is a Node.js wrapper of TMDB API. We apply chain-style design on it, which make it more semantic and functional. Here, each methods only accept one argument, and the name of this method tells you what it is.
 
-**TMDB OBJECT**
+**TMDB OBJECT**  
 Return **TMDB** Object by *Tmdb.init(key)* method, its *run()* method as the end of chain return a promise which will be resolved to *DATA OBJECT*
 
-**DATA OBJECT**
+**DATA OBJECT**  
 This object is getten by *TMDB.run()*, and it returns plain json data by *DATA.output()* method. It has two methods:
 
 * *filter()*  filter data by location,etc

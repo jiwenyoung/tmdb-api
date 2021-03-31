@@ -1,11 +1,19 @@
 {
-  "name": "tmdb",
+  "name": "tmdb-interface",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "This is a Node.js wrapper of TMDB API. We apply chain-style design on it, which make it more semantic and functional.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiwenyoung/tmdb-api"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "TMDB",
+    "node.js"
+  ],
   "author": "Jiwen Young",
   "license": "ISC",
   "dependencies": {

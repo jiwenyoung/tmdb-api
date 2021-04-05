@@ -78,10 +78,4 @@ const Tmdb = {
     }
 }
 
-const main = async ()=>{
-    const key = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkNDIxYWJkNWNiMDBkYjYxYjMwZDM0ZjRlY2Y0OWVjMSIsInN1YiI6IjYwNWFlMWQwMjJkZjJlMDA2YWFiM2FiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.XQIZDDTht8NrAF_5eZ9Da6a4FkbDk_st3lOW4G4jZGw'
-    console.dir((await Tmdb.init(key).television('1399').rating().end().run()).filter().image().output())
-}
-main()
-
 module.exports = Tmdb

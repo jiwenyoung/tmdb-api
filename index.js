@@ -78,12 +78,4 @@ const Tmdb = {
     }
 }
 
-//const main = async ()=>{
-    //const DATA = await Tmdb.init(key).television('1399').rating().end().run()
-    //console.dir(DATA)
-    //const data = (Data.init(DATA.dataset, DATA.type)).filter({location:'US'}).image().output()
-    //console.dir(data)
-//}
-//main()
-
 module.exports = Tmdb

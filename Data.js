@@ -6,7 +6,10 @@ const Data = {
         return this
     },
     output() {
-        return this.dataset
+        return {
+            type: this.type,
+            data: this.dataset 
+        }
     },
     filter(options = {}) {
         if (['release', 'provider', 'tv_rating', 'imdb', 'certification'].includes(this.type)) {

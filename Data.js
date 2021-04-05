@@ -5,6 +5,10 @@ const Data = {
         this.type = type
         return this
     },
+    type(type){
+        this.type = type
+        return this
+    },
     output() {
         return this.dataset 
     },

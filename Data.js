@@ -1,6 +1,5 @@
 const Data = {
     dataset: {},
-    type: '',
     init(dataset, type) {
         this.dataset = dataset
         this.type = type

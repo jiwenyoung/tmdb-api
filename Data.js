@@ -1,8 +1,9 @@
 const Data = {
     dataset: {},
+    type: {},
     init(dataset, type) {
         this.dataset = dataset
-        this.type = type
+        this.type.name = type
         return this
     },
     output() {
@@ -13,7 +14,7 @@ const Data = {
     },
     filter(options = {}) {
         if (['release', 'provider', 'tv_rating', 'imdb', 'certification'].includes(this.type)) {
-            switch (this.type) {
+            switch (this.type.name) {
                 case 'release':
                     {
                         let location = ''

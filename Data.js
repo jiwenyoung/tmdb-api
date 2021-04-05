@@ -9,7 +9,7 @@ const Data = {
         return this.dataset
     },
     filter(options = {}) {
-        if (['release', 'provider', 'tv_ratings', 'imdb', 'certification'].includes(this.type)) {
+        if (['release', 'provider', 'tv_rating', 'imdb', 'certification'].includes(this.type)) {
             switch (this.type) {
                 case 'release':
                     {

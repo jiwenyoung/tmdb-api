@@ -1,6 +1,6 @@
 {
   "name": "tmdb-interface",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "This is a Node.js wrapper of TMDB API. We apply chain-style design on it, which make it more semantic and functional.",
   "main": "index.js",
   "repository": {

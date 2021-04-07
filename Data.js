@@ -65,9 +65,7 @@ const Data = {
                         let collection = {}
                         Object.entries(this.dataset).forEach((element) => {
                             [index, content] = element
-                            if (content.length !== 0) {
-                                collection[index] = content
-                            }
+                            collection[index] = content
                         })
                         this.dataset = collection
                     }

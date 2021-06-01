@@ -189,7 +189,7 @@ const tvseries = (self) => {
             detail() {
                 return {
                     end() {
-                        self.url = self.api(`/tv/${id}`)
+                        self.url = self.api(`/tv/${id}?append_to_response=videos,images`)
                         self.type = 'detail'
                         return self
                     }
